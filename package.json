@@ -1,0 +1,23 @@
+{
+  "name": "lyrics_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDybas/lyrics_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GDybas/lyrics_app/issues"
+  },
+  "homepage": "https://github.com/GDybas/lyrics_app#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
