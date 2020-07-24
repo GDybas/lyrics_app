@@ -25,12 +25,12 @@ body {
 
 
   #header-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     #info {
-      width: 50%;
+      width: 100%;
       height: 20%;
 
       #title,
@@ -39,15 +39,12 @@ body {
         width: 100%;
         padding: 1.5rem;
         border-radius: 5px;
-      }
-
-      #title {
-        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
       }
     }
 
     #btn-container {
-      width: 50%;
+      width: 100%;
       display: flex;
       justify-content: center;
 

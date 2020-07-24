@@ -16,35 +16,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #main-section #header-one {
+  #main-section #header-one #info {
+    width: 100%;
+    height: 20%; }
+    #main-section #header-one #info #title,
+    #main-section #header-one #info #author {
+      background: #f4f4f4;
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 5px;
+      margin-top: 1.5rem; }
+  #main-section #header-one #btn-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    #main-section #header-one #info {
-      width: 50%;
-      height: 20%; }
-      #main-section #header-one #info #title,
-      #main-section #header-one #info #author {
-        background: #f4f4f4;
-        width: 100%;
-        padding: 1.5rem;
-        border-radius: 5px; }
-      #main-section #header-one #info #title {
-        margin-bottom: 1.5rem; }
-    #main-section #header-one #btn-container {
-      width: 50%;
-      display: flex;
-      justify-content: center; }
-      #main-section #header-one #btn-container #back-btn {
-        background: #333;
-        padding: 1rem;
-        border-radius: 5px;
-        border: 1px solid #333;
-        color: #fff; }
-        #main-section #header-one #btn-container #back-btn:hover {
-          transition: 0.3s;
-          background: rgba(51, 51, 51, 0.9);
-          cursor: pointer; }
+    justify-content: center; }
+    #main-section #header-one #btn-container #back-btn {
+      background: #333;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #333;
+      color: #fff; }
+      #main-section #header-one #btn-container #back-btn:hover {
+        transition: 0.3s;
+        background: rgba(51, 51, 51, 0.9);
+        cursor: pointer; }
   #main-section #lyrics {
     background: #f4f4f4;
     width: 100%;
