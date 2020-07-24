@@ -1,1 +1,126 @@
-$main-color: #fff;
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  min-height: auto;
+}
+
+#main-section {
+  max-width: 900px;
+  background: $background-color;
+  // height: 100vh;
+  margin: auto;
+  border-radius: 30px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+
+  #header-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #info {
+      width: 50%;
+      height: 20%;
+
+      #title,
+      #author {
+        background: $secondary-color;
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 5px;
+      }
+
+      #title {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    #btn-container {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      #back-btn {
+        background: $primary-color;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        color: #fff;
+
+        &:hover {
+          transition: 0.3s;
+          background: rgba($primary-color, 0.9);
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+
+
+  #lyrics {
+    background: $secondary-color;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+#song-choice {
+  max-width: 900px;
+  background: $background-color;
+  margin: auto;
+  border-radius: 30px;
+  padding: 2rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+
+
+  #search {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  #songs-list {
+    list-style: none;
+    background: $secondary-color;
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+
+    .song-btn {
+      border: 1px solid $primary-color;
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin: 5px;
+      background: $secondary-color;
+
+
+      &:hover {
+        transition: 0.3s;
+        background: $background-color;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

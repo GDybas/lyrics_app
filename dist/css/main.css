@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  min-height: auto; }
+
+#main-section {
+  max-width: 900px;
+  background: #cacaca;
+  margin: auto;
+  border-radius: 30px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #main-section #header-one {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #main-section #header-one #info {
+      width: 50%;
+      height: 20%; }
+      #main-section #header-one #info #title,
+      #main-section #header-one #info #author {
+        background: #f4f4f4;
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 5px; }
+      #main-section #header-one #info #title {
+        margin-bottom: 1.5rem; }
+    #main-section #header-one #btn-container {
+      width: 50%;
+      display: flex;
+      justify-content: center; }
+      #main-section #header-one #btn-container #back-btn {
+        background: #333;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #333;
+        color: #fff; }
+        #main-section #header-one #btn-container #back-btn:hover {
+          transition: 0.3s;
+          background: rgba(51, 51, 51, 0.9);
+          cursor: pointer; }
+  #main-section #lyrics {
+    background: #f4f4f4;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem; }
+
+#song-choice {
+  max-width: 900px;
+  background: #cacaca;
+  margin: auto;
+  border-radius: 30px;
+  padding: 2rem; }
+  #song-choice #search {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-bottom: 1.5rem;
+    width: 100%; }
+  #song-choice #songs-list {
+    list-style: none;
+    background: #f4f4f4;
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px; }
+    #song-choice #songs-list .song-btn {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin: 5px;
+      background: #f4f4f4; }
+      #song-choice #songs-list .song-btn:hover {
+        transition: 0.3s;
+        background: #cacaca;
+        cursor: pointer; }
