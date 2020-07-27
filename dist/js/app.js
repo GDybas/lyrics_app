@@ -1,9 +1,25 @@
 const listPage = document.getElementById('song-choice-section');
 const lyricsPage = document.getElementById('song-lyrics-section');
+const startPage = document.getElementById('start-page-mobile');
+const songsList = document.getElementById('#songs-list');
+
 
 //Event Listeners
+//Wyświetlanie listy
 document.getElementById('songs-list').addEventListener('click', getSongLyrics);
-document.querySelector('.change-view-btn').addEventListener('click', changeView);
+// Zmiana widoku po kliknieciu przycisków
+document.querySelector('#start-to-list').addEventListener('click', (e) => {
+  startPage.style.display = 'none';
+  listPage.style.display = 'flex';
+});
+document.querySelector('#to-list').addEventListener('click', (e) => {
+  lyricsPage.style.display = 'none';
+  listPage.style.display = 'flex';
+});
+
+//wyszukiwanie na liście
+// document.querySelector('form #search').addEventListener('keyup', searchLyrics);
+
 
 
 
@@ -24,7 +40,7 @@ function getSongList() {
 getSongList();
 
 
-//Wyświetlenie napisów po kliknięciu na liście
+//Wyświetlenie napisów po kliknięciu na liście i zmiana widoku
 function getSongLyrics(e) {
 
   if (e.target && e.target.matches("li.song-btn")) {
@@ -57,10 +73,20 @@ function getSongLyrics(e) {
   }
 }
 
-function changeView(e) {
-  if (e.target.id === 'to-list') {
-    console.log(listPage);
-    lyricsPage.style.display = 'none';
-    listPage.style.display = 'flex';
-  }
-}
+
+
+
+//Wyszukiwanie piosenek na liście
+/*function searchLyrics(e) {
+  const typed = e.target.value.toLowerCase();
+
+  // const songs = songsList.querySelector('li.matches("li.song-btn")');
+  Array.from(songs).forEach((song) => {
+    const title = song.innerText;
+    if (title.toLowerCase().indexOf(typed) != -1) {
+      song.style.display = 'block';
+    } else {
+      song.style.display = 'none';
+    }
+  });
+}*/
