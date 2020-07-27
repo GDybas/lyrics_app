@@ -9,12 +9,21 @@
 body {
   font-family: $font;
   min-height: auto;
+
+
 }
 
-#main-section {
+// .sub-container {
+//   height: 100%;
+//   width: 100%;
+// }
+
+#start-page-mobile {}
+
+#song-lyrics-section {
   max-width: 900px;
-  background: $background-color;
-  // height: 100vh;
+  background: $dark-color;
+  height: 100vh;
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
@@ -22,38 +31,38 @@ body {
   flex-direction: column;
   justify-content: center;
 
-
-
   #header-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     #info {
-      width: 50%;
-      height: 20%;
+      width: 100%;
+      // height: 20%;
 
       #title,
       #author {
         background: $secondary-color;
         width: 100%;
-        padding: 1.5rem;
+        padding: 0.5rem;
         border-radius: 5px;
-      }
-
-      #title {
-        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
       }
     }
 
     #btn-container {
-      width: 50%;
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
 
-      #back-btn {
+      #sub-logo {
+        height: 70px;
+        width: 70px;
+      }
+
+      #to-list {
         background: $primary-color;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 5px;
         border: 1px solid $primary-color;
         color: #fff;
@@ -73,22 +82,25 @@ body {
   #lyrics {
     background: $secondary-color;
     width: 100%;
+    // height: 85%;
     border-radius: 5px;
     margin-top: 2rem;
     text-align: center;
     padding: 2rem;
+    overflow-y: scroll;
   }
 }
 
-#song-choice {
+#song-choice-section {
   max-width: 900px;
-  background: $background-color;
+  height: 100vh;
+  background: $dark-color;
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
   #search {
@@ -99,12 +111,16 @@ body {
     width: 100%;
   }
 
+
+
   #songs-list {
     list-style: none;
     background: $secondary-color;
     width: 100%;
+    // height: 85%;
+    overflow-y: scroll;
     padding: 0.2rem;
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
     border-radius: 5px;
 
     .song-btn {
@@ -117,10 +133,10 @@ body {
 
       &:hover {
         transition: 0.3s;
-        background: $background-color;
+        background: $light-dark-color;
         cursor: pointer;
+
       }
     }
-
   }
 }
