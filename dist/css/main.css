@@ -83,5 +83,5 @@ body {
       background: #e4e4e4; }
       #song-choice-section #songs-list .song-btn:hover {
         transition: 0.3s;
-        background: linear-gradient(180deg, black 0%, #1d1d1d 46%, #454545 100%);
+        background: #a9a8a8;
         cursor: pointer; }

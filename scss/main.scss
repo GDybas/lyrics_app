@@ -133,8 +133,9 @@ body {
 
       &:hover {
         transition: 0.3s;
-        background: $dark-color;
+        background: $light-dark-color;
         cursor: pointer;
+
       }
     }
   }
