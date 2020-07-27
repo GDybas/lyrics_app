@@ -7,75 +7,81 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   min-height: auto; }
 
-#main-section {
+#song-lyrics-section {
   max-width: 900px;
-  background: #780ab3;
+  background: linear-gradient(180deg, black 0%, #1d1d1d 46%, #454545 100%);
+  height: 100vh;
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: #333 url("../img/background-pattern.jpg") no-repeat center center/cover; }
-  #main-section #header-one #info {
-    width: 100%;
-    height: 20%; }
-    #main-section #header-one #info #title,
-    #main-section #header-one #info #author {
-      background: #fff;
+  justify-content: center; }
+  #song-lyrics-section #header-one #info {
+    width: 100%; }
+    #song-lyrics-section #header-one #info #title,
+    #song-lyrics-section #header-one #info #author {
+      background: #e4e4e4;
       width: 100%;
       padding: 0.5rem;
       border-radius: 5px;
       margin-top: 1.5rem; }
-  #main-section #header-one #btn-container {
+  #song-lyrics-section #header-one #btn-container {
     width: 100%;
     display: flex;
-    justify-content: center; }
-    #main-section #header-one #btn-container #back-btn {
-      background: #f1a738;
-      padding: 1rem;
+    justify-content: space-around; }
+    #song-lyrics-section #header-one #btn-container #sub-logo {
+      height: 70px;
+      width: 70px; }
+    #song-lyrics-section #header-one #btn-container #to-list {
+      background: #2ed35d;
+      padding: 1.5rem;
       border-radius: 5px;
-      border: 1px solid #f1a738;
+      border: 1px solid #2ed35d;
       color: #fff; }
-      #main-section #header-one #btn-container #back-btn:hover {
+      #song-lyrics-section #header-one #btn-container #to-list:hover {
         transition: 0.3s;
-        background: rgba(241, 167, 56, 0.9);
+        background: rgba(46, 211, 93, 0.9);
         cursor: pointer; }
-  #main-section #lyrics {
-    background: #fff;
+  #song-lyrics-section #lyrics {
+    background: #e4e4e4;
     width: 100%;
     border-radius: 5px;
     margin-top: 2rem;
     text-align: center;
-    padding: 2rem; }
+    padding: 2rem;
+    overflow-y: scroll; }
 
 #song-choice-section {
   max-width: 900px;
-  background: #780ab3;
+  height: 100vh;
+  background: linear-gradient(180deg, black 0%, #1d1d1d 46%, #454545 100%);
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
-  background: #333 url("../img/background-pattern.jpg") no-repeat center center/cover; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   #song-choice-section #search {
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid #f1a738;
+    border: 1px solid #2ed35d;
     margin-bottom: 1.5rem;
     width: 100%; }
   #song-choice-section #songs-list {
     list-style: none;
-    background: #fff;
+    background: #e4e4e4;
     width: 100%;
+    overflow-y: scroll;
     padding: 0.2rem;
-    margin-bottom: 1.5rem;
     border-radius: 5px; }
     #song-choice-section #songs-list .song-btn {
-      border: 1px solid #f1a738;
+      border: 1px solid #2ed35d;
       padding: 0.5rem;
       border-radius: 5px;
       margin: 5px;
-      background: #fff; }
+      background: #e4e4e4; }
       #song-choice-section #songs-list .song-btn:hover {
         transition: 0.3s;
-        background: #780ab3;
+        background: linear-gradient(180deg, black 0%, #1d1d1d 46%, #454545 100%);
         cursor: pointer; }

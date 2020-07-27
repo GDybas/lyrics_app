@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section id="main-section">
+    <section id="start-page-mobile"></section>
+    <section id="song-lyrics-section">
       <div id="header-one">
         <div id="btn-container">
-          <div id="back-btn">Do wyboru tekstów</div>
+          <img id="sub-logo" src="./img/logo-note-only-01.png" alt="Logo" />
+
+          <div id="to-list" class="change-view-btn">Do wyboru tekstów</div>
         </div>
         <div id="info">
           <div id="title"></div>
@@ -23,11 +26,14 @@
       <form>
         <input type="text" id="search" placeholder="Wprowadź utwór..." />
       </form>
-      <div>
-        <ul id="songs-list"></ul>
-      </div>
+      <!-- <div class="sub-container"> -->
+      <ul id="songs-list"></ul>
+      <!-- </div> -->
     </section>
-
+    <script
+      src="https://kit.fontawesome.com/af2f4f5ac3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
