@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 95vh;
+  min-height: -webkit-fill-available;
   background: url("../img/start-screen.jpg") no-repeat center right/cover;
   padding: 2rem;
   border-radius: 30px; }
