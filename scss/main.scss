@@ -18,7 +18,54 @@ body {
 //   width: 100%;
 // }
 
-#start-page-mobile {}
+
+#btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  #start-to-list {
+    padding: 1.5rem 3rem;
+  }
+
+  .change-view-btn {
+    background: $primary-color;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    color: #fff;
+
+    &:hover {
+      transition: 0.3s;
+      background: rgba($primary-color, 0.9);
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+#start-page-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background: $background-image no-repeat center right/cover;
+  padding: 2rem;
+  border-radius: 30px;
+
+  #main-logo {
+    width: 200px;
+  }
+
+  #welcome-msg h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+}
 
 #song-lyrics-section {
   max-width: 900px;
@@ -27,7 +74,7 @@ body {
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 
@@ -49,32 +96,6 @@ body {
         margin-top: 1.5rem;
       }
     }
-
-    #btn-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-
-      #sub-logo {
-        height: 70px;
-        width: 70px;
-      }
-
-      #to-list {
-        background: $primary-color;
-        padding: 1.5rem;
-        border-radius: 5px;
-        border: 1px solid $primary-color;
-        color: #fff;
-
-        &:hover {
-          transition: 0.3s;
-          background: rgba($primary-color, 0.9);
-          cursor: pointer;
-        }
-      }
-    }
-
   }
 
 
@@ -91,6 +112,11 @@ body {
   }
 }
 
+#sub-logo {
+  height: 70px;
+  width: 70px;
+}
+
 #song-choice-section {
   max-width: 900px;
   height: 100vh;
@@ -98,7 +124,7 @@ body {
   margin: auto;
   border-radius: 30px;
   padding: 2rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 
@@ -132,7 +158,7 @@ body {
 
 
       &:hover {
-        transition: 0.3s;
+        transition: 0.2s;
         background: $light-dark-color;
         cursor: pointer;
 
