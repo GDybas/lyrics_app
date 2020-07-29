@@ -1,18 +1,18 @@
 const listPage = document.getElementById('song-choice-section');
 const lyricsPage = document.getElementById('song-lyrics-section');
 const startPage = document.getElementById('start-page-mobile');
-const songsList = document.getElementById('#songs-list');
+const songsList = document.getElementById('songs-list');
 
 
 //Event Listeners
 //Wyświetlanie listy
 document.getElementById('songs-list').addEventListener('click', getSongLyrics);
 // Zmiana widoku po kliknieciu przycisków
-document.querySelector('#start-to-list').addEventListener('click', (e) => {
+document.getElementById('start-to-list').addEventListener('click', (e) => {
   startPage.style.display = 'none';
   listPage.style.display = 'flex';
 });
-document.querySelector('#to-list').addEventListener('click', (e) => {
+document.getElementById('to-list').addEventListener('click', (e) => {
   lyricsPage.style.display = 'none';
   listPage.style.display = 'flex';
 });
